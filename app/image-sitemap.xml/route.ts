@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server'
-
-const BASE = 'https://aurea.com.br'
+import { BASE_URL as BASE } from '@/lib/base-url'
 
 const IMAGES = [
   {

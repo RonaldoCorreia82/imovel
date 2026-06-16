@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-
-const BASE_URL = 'https://aurea.com.br'
+import { BASE_URL } from '@/lib/base-url'
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
