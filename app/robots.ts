@@ -1,0 +1,25 @@
+import type { MetadataRoute } from 'next'
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/api/', '/_next/static/'],
+      },
+      {
+        userAgent: 'Googlebot-Image',
+        allow: '/fotos/',
+      },
+      {
+        userAgent: 'AdsBot-Google',
+        allow: '/',
+      },
+    ],
+    sitemap: [
+      'https://aurea.com.br/sitemap.xml',
+      'https://aurea.com.br/image-sitemap.xml',
+    ],
+  }
+}
